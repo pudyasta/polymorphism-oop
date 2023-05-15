@@ -1,13 +1,14 @@
 package org.example;
+import java.io.IOException;
 
-/**
- * Hello world!
- *
- */
-public class App 
+public class App
 {
-    public static void main( String[] args )
+    public static void main( String[] args ) throws IOException
     {
-        System.out.println( "Hello World!" );
+        SistemInformasi newSys = new SistemInformasi();
+        SistemInformasiView informasiView = new SistemInformasiView(newSys);
+        informasiView.siaView();
+//        Diploma a = new Diploma("Budi","Vokasi",1,123,2018,150);
+//        a.setSyaratLulus("Lulus");
     }
 }
